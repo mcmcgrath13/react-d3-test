@@ -1,0 +1,22 @@
+.results {
+  padding: 5px 30px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.mesh-chart {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+
+}
+
+.spinner {
+  margin: 10px auto 0px;
+}
