@@ -22,7 +22,7 @@ class MedlineService {
 
     // return data;
     return _.map(data, (article) => {
-      // abstract away the specifics of the reddit API response and take only the fields we care about
+      // abstract away the specifics of the medline API response and take only the fields we care about
       return {
         title: _.get(article, 'title'),
         pmid: _.get(article, 'pmid'),

@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: mcmcgrath13/epilepsymysql
+    ports:
+     - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: 'medline_test_v3'
+  backend:
+    image: mcmcgrath13/epilepsybackend
+    ports:
+     - "3001:3001"
+  frontend_ember:
+    image: mcmcgrath13/epilepsyemberapp
+    ports:
+     - "4200:4200"
+  frontend_react:
+    image: mcmcgrath13/epilepsyreactapp
+    ports:
+     - "3000:3000"

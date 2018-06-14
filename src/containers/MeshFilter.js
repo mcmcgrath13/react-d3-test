@@ -38,7 +38,6 @@ class MeshFilter extends Component {
 
 function mapStateToProps(state) {
   return {
-    meshArticles: articleSelectors.getArticles(state),
     meshSearch: articleSelectors.getMeshSearch(state)
   };
 }
